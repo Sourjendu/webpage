@@ -1,0 +1,156 @@
+<!-- Section 4: Software Development Process -->
+<section id="section4" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Our Process That You Can Believe</h2>
+
+    <!-- Delivery Deadline Pattern -->
+    <div class="text-center mb-5">
+      <h4>Realistic Delivery Deadline Pattern</h4>
+      <p>We strive to deliver high-quality software within the following timeline:</p>
+      <p class="delivery-pattern">Initial Prototype: 2 weeks / Development: 6 weeks / Testing and Refinements: 2 weeks</p>
+    </div>
+
+    <!-- Process Description -->
+    <div class="row">
+      <div class="col-lg-6">
+        <h4 class="mb-4">Step-by-Step Process</h4>
+        <ol class="process-list">
+          <li>
+            <h5>Requirement Gathering</h5>
+            <p>Our team will thoroughly understand your business needs and project requirements.</p>
+          </li>
+          <li>
+            <h5>Planning and Design</h5>
+            <p>We will create a comprehensive plan and design that aligns with your objectives.</p>
+          </li>
+          <li>
+            <h5>Development and Coding</h5>
+            <p>Our skilled developers will bring your software to life using cutting-edge technologies.</p>
+          </li>
+          <li>
+            <h5>Testing and Quality Assurance</h5>
+            <p>We will rigorously test the software to ensure it meets the highest quality standards.</p>
+          </li>
+          <li>
+            <h5>Deployment and Launch</h5>
+            <p>We will deploy the software on your desired platforms and assist with the successful launch.</p>
+          </li>
+          <li>
+            <h5>Support and Maintenance</h5>
+            <p>We provide ongoing support and maintenance to ensure your software runs smoothly.</p>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Animated Content -->
+      <div class="col-lg-6">
+        <div class="animated-content">
+          <h4 class="mb-4">Experience Seamless Software Development</h4>
+          <p>Our team of experts is committed to delivering outstanding software solutions tailored to your unique requirements. With a focus on quality, efficiency, and client satisfaction, we ensure a seamless development process that exceeds your expectations.</p>
+          <p>Through continuous communication and collaboration, we strive to build a strong partnership with our clients, resulting in successful and impactful software applications.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back Button -->
+    <div class="text-center mt-5">
+      <button onclick="window.history.back()" class="btn btn-primary">Go Back</button>
+    </div>
+  </div>
+</section>
+
+<!-- Custom CSS -->
+<style>
+  /* Centered Content */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  /* Section Background Color */
+  #section4 {
+    background-image: url(m.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Delivery Deadline Pattern */
+  .delivery-pattern {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #090101;
+  }
+
+  /* Process Description */
+  .process-list {
+    list-style: none;
+    counter-reset: step-counter;
+    padding-left: 0;
+  }
+
+  .process-list li {
+    position: relative;
+    counter-increment: step-counter;
+    margin-bottom: 2rem;
+    padding-left: 2.5rem;
+  }
+
+  .process-list li::before {
+    content: counter(step-counter);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: #080a0e;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  .process-list h5 {
+    margin-bottom: 0.5rem;
+    color: #0c0a0a;
+  }
+
+  /* Animated Content */
+  .animated-content {
+    animation: slide-up 2s ease-in-out;
+  }
+
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Back Button */
+  .mt-5 {
+    margin-top: 3rem;
+  }
+
+  .btn-primary {
+    background-color: #0b0b0b;
+    color: #d2d2d9;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: #080909;
+  }
+</style>
